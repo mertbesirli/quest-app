@@ -26,7 +26,7 @@
 
 <!-- ABOUT THE PROJECT -->
 ## About The Project
-An application will be made where every user can register, post, comment and like.
+An application will be made where every user can register, post, comment and like. The project continues, the goal is to get used to the spring framework patterns and understand the project structure and add to it as you learn new things. The README.md file will be updated as it is added.
 
 ### Built With
 * 
