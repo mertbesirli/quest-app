@@ -21,9 +21,9 @@ public class Post {
     @OnDelete(action = OnDeleteAction.CASCADE)
     private User user;
 
-    String title;
+    private String title;
 
     @Lob
     @Column(columnDefinition = "text")
-    String text;
+    private String text;
 }

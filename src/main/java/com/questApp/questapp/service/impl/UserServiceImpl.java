@@ -27,13 +27,7 @@ public class UserServiceImpl implements UserService {
 
     @Override
     public User getOneUser(Long userId) {
-        Optional<User> result = userRepository.findById(userId);
-        if(result.isPresent()){
-            return result.get();
-        }
-        else{
-            return null;
-        }
+        return userRepository.findById(userId).orElse(null);
     }
     @Override
     public User updateUser(Long userId, User userRequest) {
@@ -56,7 +50,7 @@ public class UserServiceImpl implements UserService {
         try {
             userRepository.deleteById(userId);
         }catch (EmptyResultDataAccessException e){
-            System.out.println("User" + userId+" does not exitst"); // if you want, make log.
+            System.out.println("User" + userId+" does not exist"); // if you want, make log.
         }
     }
 }
