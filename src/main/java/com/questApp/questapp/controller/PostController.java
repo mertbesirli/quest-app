@@ -40,7 +40,7 @@ public class PostController {
         // convert entity to DTO
         PostDto postResponse = modelMapper.map(post, PostDto.class);
 
-        return new ResponseEntity<PostDto>(postResponse, HttpStatus.CREATED);
+        return new ResponseEntity<>(postResponse, HttpStatus.CREATED);
     }
 
     @GetMapping("/{postId}")
