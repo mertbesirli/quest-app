@@ -85,7 +85,7 @@ public class CommentServiceImpl implements CommentService {
         try {
             commentRepository.deleteById(commentId);
         }catch (EmptyResultDataAccessException e){
-            System.out.println("Post" + commentId +" does not exist"); // if you want, make log.
+            System.out.println("Comment" + commentId +" does not exist"); // if you want, make log.
         }
     }
 
