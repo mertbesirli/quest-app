@@ -22,7 +22,7 @@ public class LikeServiceImpl implements LikeService {
     private UserServiceImpl userService;
 
     private PostServiceImpl postService;
-    
+
 
     @Override
     public List<Like> getAllLikes(Optional<Long> userId, Optional<Long> postId) {
